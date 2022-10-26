@@ -1,0 +1,38 @@
+
+
+<section>
+    <h4 class="text-center mt-4">Create New Post</h4>
+
+    <div class="d-flex ml-5">
+        <form class="new-post-form">
+            <div class="mt-4">
+                <label for="post-title">Title</label>
+                <input type="text" name="post-title" id="post-title" />
+            </div>
+
+            <div>
+                <label for="post_url">Link</label>
+                <input name="post_url" id="post_url">
+            </div>
+            <button type="submit" id="create-post"
+                class="btn btn-outline-secondary btn-light bg-dark text-light mt-3">Create</button></a>
+        </form>
+    </div>
+</section>
+
+<h4 class="ml-3">Your Posts</h4>
+
+{{#if posts.length}}
+<section class="mt-4">
+    {{#each posts as |post|}}
+    <article class="post-card col-4">
+        <div class="title card-header bg-secondary text-light" style="width: 30rem" id="dream-title">
+            {{>post-info post}}
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link text-light"><button class="btn btn-outline-secondary btn-light mt-3">Edit Post</button></a>
+        </div>
+    </article>
+    {{/each}}
+</section>
+{{/if}}
+
+<script src="/javascript/post.js"></script>
