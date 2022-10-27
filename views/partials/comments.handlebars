@@ -1,0 +1,12 @@
+<div class="comments">
+  {{#each this}}
+  <section class="comment card col-4 bg-secondary text-light mb-3">
+    <h3 class="text">
+      {{comment_text}}
+    </h3>
+    <div class="meta">
+      {{user.username}} on {{created_at}}
+    </div>
+  </section>
+  {{/each}}
+</div>

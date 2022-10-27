@@ -73,7 +73,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
 
         const post = dbPostData.get({ plain: true });
 
-        res.render('single-post', {
+        res.render('edit-post', {
             post,
             loggedIn: req.session.loggedIn
         });
@@ -83,5 +83,6 @@ router.get('/edit/:id', withAuth, (req, res) => {
         res.status(500).json(err);
     });
 });
+
 
 module.exports = router;

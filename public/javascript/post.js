@@ -1,3 +1,5 @@
+
+
 async function newPostHandler (event) {
     event.preventDefault();
 
@@ -21,5 +23,7 @@ async function newPostHandler (event) {
         alert(response.statusText);
     }
 }
+
+
 
 document.querySelector('.new-post-form').addEventListener('submit', newPostHandler);

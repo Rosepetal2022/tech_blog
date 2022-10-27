@@ -1,7 +1,11 @@
-<ol class="post-list">
+{{#if posts.length}}
+<section class="mt-4">
     {{#each posts as |post|}}
-    <li>
-       {{>post-info post}}
-    </li>
+    <article class="post-card col-4 mt-3">
+        <div class="title card-header bg-secondary text-light" style="width: 30rem" id="dream-title">
+            {{>post-info post}}
+        </div>
+    </article>
     {{/each}}
-</ol>
+</section>
+{{/if}}
