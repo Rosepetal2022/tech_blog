@@ -1,5 +1,6 @@
 const modal = document.querySelector('#signUpModal')
 
+//function to let a user create a new account
 async function signupFormHandler(event) {
     event.preventDefault();
 
@@ -30,6 +31,7 @@ async function signupFormHandler(event) {
     }
 }
 
+//function to let a user login if they have already created an account
 async function loginFromHandler(event) {
     event.preventDefault();
 

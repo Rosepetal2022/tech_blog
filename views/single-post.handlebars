@@ -1,3 +1,4 @@
+<!--displays the posts and comment form for the single post page if you are logged in-->
 {{> post-info post}}
 
 {{#if loggedIn}}
@@ -5,10 +6,10 @@
   <div>
     <textarea name="comment-body" class="form-control col-4 mt-3 mb-3" placeholder="write comment here"></textarea>
   </div>
-<div>
+  <div>
     <button type="submit" class="btn btn-outline-secondary btn-light mb-3">Add Comment</button>
-    
-</div>
+
+  </div>
 </form>
 {{/if}}
 

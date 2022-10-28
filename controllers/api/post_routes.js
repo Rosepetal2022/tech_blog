@@ -34,6 +34,7 @@ router.get('/', (req, res) => {
         });
 });
 
+//get post by id
 router.get('/:id', (req, res) => {
     Post.findOne({
         where: {

@@ -1,5 +1,4 @@
-
-
+//function to create new posts
 async function newPostHandler (event) {
     event.preventDefault();
 

@@ -3,6 +3,7 @@ require('dotenv').config();
 const Sequelize = require('sequelize');
 let sequelize;
 
+//creates the jawsdb connection and protects your info with dotenv
 if (process.env.JAWSDB_URL) {
     sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {

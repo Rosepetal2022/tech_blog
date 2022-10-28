@@ -1,3 +1,4 @@
+//function to delete post
 async function deletePostHandler(event) {
     event.preventDefault();
     console.log('button was clicked')

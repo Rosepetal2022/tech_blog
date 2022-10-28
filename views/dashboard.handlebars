@@ -1,8 +1,6 @@
-
-
+<!--create new post form-->
 <section>
     <h4 class="text-center mt-4">Create New Post</h4>
-
     <div class="d-flex ml-5">
         <form class="new-post-form">
             <div class="mt-4">
@@ -20,15 +18,16 @@
     </div>
 </section>
 
+<!--renders the posts you've already made-->
 <h4 class="ml-3">Your Posts</h4>
-
 {{#if posts.length}}
 <section class="mt-4">
     {{#each posts as |post|}}
     <article class="post-card col-4">
         <div class="title card-header bg-secondary text-light mt-2" style="width: 30rem" id="post-title">
             {{>post-info post}}
-            <a href="/dashboard/edit/{{post.id}}" class="edit-link text-light"><button class="btn btn-outline-secondary btn-light mt-3">Edit Post</button></a>
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link text-light"><button
+                    class="btn btn-outline-secondary btn-light mt-3">Edit Post</button></a>
         </div>
     </article>
     {{/each}}

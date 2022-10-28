@@ -1,3 +1,4 @@
+//function to allow a user to logout and terminate the session
 async function logout() {
     console.log("button was clicked")
     const response = await fetch('/api/users/logout', {

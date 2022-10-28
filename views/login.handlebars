@@ -1,3 +1,4 @@
+<!--login form-->
 <div class="container d-flex justify-content-around">
   <div class="row">
     <div class="col">
@@ -17,48 +18,52 @@
             <label for="login-password">Password</label>
             <input type="password" class="form-control" id="password-input" placeholder="Password">
           </div>
-          <button type="submit" class="btn bg-dark text-white">Login</button> <button type="button" class="btn bg-dark text-white" data-toggle="modal" data-target="#signUpModal">Create Account</button>
+          <button type="submit" class="btn bg-dark text-white">Login</button> <button type="button"
+            class="btn bg-dark text-white" data-toggle="modal" data-target="#signUpModal">Create Account</button>
         </form>
       </div>
     </div>
 
-        <div class="modal" id="signUpModal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Create Account</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form class="signup-form ml-4">
-          <div class="sign-up-username mb-3">
-            <label for="signup-username">Username:</label>
-            <input type="text" class="form-control" id="signup-username" placeholder="Username">
+    <!--modal to create account-->
+    <div class="modal" id="signUpModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Create Account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="signup">
-            <label for="sign-up-email">Email address</label>
-            <input type="text" class="form-control signup" id="signup-email" aria-describedby="emailHelp"
-              placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <div class="modal-body">
+            <form class="signup-form ml-4">
+              <div class="sign-up-username mb-3">
+                <label for="signup-username">Username:</label>
+                <input type="text" class="form-control" id="signup-username" placeholder="Username">
+              </div>
+              <div class="signup">
+                <label for="sign-up-email">Email address</label>
+                <input type="text" class="form-control signup" id="signup-email" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                  else.</small>
+              </div>
+              <div class="sign-up-password mb-3">
+                <label for="sign-up-password">Password</label>
+                <input type="password" class="form-control" id="signup-password" placeholder="Password">
+              </div>
+
           </div>
-          <div class="sign-up-password mb-3">
-            <label for="sign-up-password">Password</label>
-            <input type="password" class="form-control" id="signup-password" placeholder="Password">
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+            </form>
           </div>
-        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Create Account</button>
-        </form>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
   </div>
 </div>
+
 
 <script src="/javascript/login.js"></script>

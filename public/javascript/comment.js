@@ -27,6 +27,7 @@ async function commentFormHandler(event) {
     }
 }
 
+//function to delete comment
 async function deleteCommentHandler(event) {
     event.preventDefault();
     console.log('button was clicked')

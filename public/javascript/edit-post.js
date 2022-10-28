@@ -1,3 +1,4 @@
+//function to edit post
 async function editPostHandler(event) {
     event.preventDefault();
 
